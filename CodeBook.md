@@ -1,8 +1,3 @@
----
-title: "Codebook"
-output: html_document
----
-
 This code book describes the variables in the data, the data and the work performed to clean up the data.
 
 ## Initial Steps
@@ -29,29 +24,29 @@ Commentary is provided within the script for each step that is performed to resu
 
 ##### *1. Read data sets into R, and merge the test and training data sets to create one data set.*
 
-|       The relevant data sets are read into R, and the test and training data sets are merged together to create one data set.  
+The relevant data sets are read into R, and the test and training data sets are merged together to create one data set.  
 
 ##### *2. Label the data set with variable names provided in the features data set for ease of reference.*
 
-|       To make the clean-up process easier, the variables are names based on the features data set.  
+To make the clean-up process easier, the variables are names based on the features data set.  
 
 ##### *3. Extract only the measurements on the mean and standard deviation for each measurement using the dplyr package.*
 
-|       Only the measurements on the mean and standard deviation are extracted. Based on the review of the initial data's README file, the meanfreq() measurements have been excluded as they are not specifically mean measurements.
+Only the measurements on the mean and standard deviation are extracted. Based on the review of the initial data's README file, the meanfreq() measurements have been excluded as they are not specifically mean measurements.
 
-|       The dplyr package is used to select only the relevant columns.  
+The dplyr package is used to select only the relevant columns.  
 
 ##### *4. Use descriptive activity names to name the activities in the data set.*
 
-|       The descriptive activity names are contained within the label data set. The data set is read into R and merged with our data set to give the descriptive activity names.
+The descriptive activity names are contained within the label data set. The data set is read into R and merged with our data set to give the descriptive activity names.
 
-|       The "_" has been removed and the first letters capitalised to make the activity names easier to read in accordance with tidy data principles.  
+The "_" has been removed and the first letters capitalised to make the activity names easier to read in accordance with tidy data principles.  
 
 ##### *5. Label the data set with descriptive variable names in accordance with tidy data principles.*
 
-|       The descriptive variable names are included in the features data set and have already been added to the dataset in Step 2. 
+The descriptive variable names are included in the features data set and have already been added to the dataset in Step 2. 
 
-|       However the names have been adjusted to adhere to tidy data principles, including:
+However the names have been adjusted to adhere to tidy data principles, including:
 
     1. Removing the duplicate "body" included in some variables names as an error in the initial data set.
     2. Removing "()" from the variable names
@@ -61,7 +56,7 @@ Commentary is provided within the script for each step that is performed to resu
       
 ##### *6. Create a second, independent tidy dataset with the average of each variable for each activity and each subject.*
 
-|       The dataset has been summarised to provide the average of each variable for each activity and each subject. The reshape 2 package has been used to summarise the data.  
+The dataset has been summarised to provide the average of each variable for each activity and each subject. The reshape 2 package has been used to summarise the data.  
 
 ## Variables
 

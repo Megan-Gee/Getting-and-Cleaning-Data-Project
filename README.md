@@ -1,8 +1,3 @@
----
-title: "README"
-output: html_document
----
-
 The purpose of the run_analysis script is to collect, work with and clean the "Human Activity Recognition Using Smartphones" data set.
 
 The final result of the script is the generation of a tidy data text file that meets the principles of tidy data, including:
