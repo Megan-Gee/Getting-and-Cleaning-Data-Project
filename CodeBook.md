@@ -1,14 +1,14 @@
+# CodeBook
+
 This code book describes the variables in the data, the data and the work performed to clean up the data.
 
 ## Initial Steps
-***
 
 As per the submission instructions, the script can be run as long as the Samsung data is in the working directory.
 
 For ease of use, the data was downloaded from the URL provided in the assignment instructions and unzipped. The data is contained in the original file called "UCI HAR Dataset".
 
 ## Prerequisites
-***
 
 As outlined in the README, the script utilises the dplyr and reshape2 packages. These should be installed prior to running the script using the below commands:
 
@@ -19,7 +19,7 @@ install.packages("reshape2")
 The packages are loaded into R within the script so it is not necessary to load them before running it.
 
 ## Work Performed to Clean and Transform Data
-***
+
 Commentary is provided within the script for each step that is performed to result in the final independent tidy data set. These steps include:  
 
 ##### *1. Read data sets into R, and merge the test and training data sets to create one data set.*
