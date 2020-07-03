@@ -1,3 +1,5 @@
+# README
+
 The purpose of the run_analysis script is to collect, work with and clean the "Human Activity Recognition Using Smartphones" data set.
 
 The final result of the script is the generation of a tidy data text file that meets the principles of tidy data, including:
@@ -7,7 +9,6 @@ The final result of the script is the generation of a tidy data text file that m
     3. There should be one table for each "kind" of variable
 
 ## Contents of Repository
-***
 
 The repository contains the following files:
 
@@ -19,14 +20,12 @@ run_analysis.R  | Collects, works with the cleans the "Human Activity Recognitio
 tidydata.txt    | Text file containing the independent tidy data set per Step 5 of the assignment.
 
 ## Initial Steps
-***
 
 As per the submission instructions, the script can be run as long as the Samsung data is in the working directory.
 
 For ease of use, the data was downloaded from the URL provided in the assignment instructions and unzipped. The data is contained in the original file called "UCI HAR Dataset".
 
 ## Prerequisites
-***
 
 The script utilises the dplyr and reshape2 packages. These should be installed prior to running the script using the below commands:
 
@@ -38,14 +37,12 @@ The packages are loaded into R within the script so it is not necessary to load 
 
 
 ## How it Works
-***
 
 As outlined above, the run-analysis script works to collect, clean and transport the provided dataset. It reads the relevant data sets into R, merges the data and applies descriptive activity and variable names. It then creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Further information outlining exactly how the script works to transform data is included in the CodeBook.
 
 ## Final Result and Explanation
-***
 
 The final result is a text file that contains the independent tidy data set. Further information regarding the process is explained in the CodeBook. 
 
